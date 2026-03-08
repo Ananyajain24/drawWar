@@ -1,0 +1,4 @@
+/* Clear default App.css styles since we use index.css */
+#root {
+  width: 100%;
+}
