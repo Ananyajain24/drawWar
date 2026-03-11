@@ -12,9 +12,11 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: ["https://drawwar.vercel.app", "http://localhost:5173", "http://localhost:5174"],
+    methods: ["GET", "POST"]
   }
 });
+
 
 // Using local rooms for timer intervals and ephemeral state only
 const liveRooms = {};
