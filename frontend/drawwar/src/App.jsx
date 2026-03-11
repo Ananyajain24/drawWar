@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import DrawingCanvas from './components/DrawingCanvas';
 
-const socket = io(import.meta.env.VITE_SERVER_URL || 'http://localhost:3000');
+const SERVER_URL = 'https://drawwar.onrender.com';
+const socket = io(SERVER_URL);
 
 
 /* ─── Design tokens ────────────────────── */
